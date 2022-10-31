@@ -13,7 +13,7 @@
         {
             "displayName": "State Machine Example Scene",
             "description": "Contains a sample scene showcasing the functionality of Ocean FSM",
-            "path": "Samples~/ExampleScene"
+            "path": "Samples/ExampleScene"
         }
     ]
 }
