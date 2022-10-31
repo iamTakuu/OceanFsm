@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "displayName": "Ocean FSM",
     "description": "A code-only, simple and easy to use Finite State Machine for your Unity Projects",
-    "unity": "2017.1",
+    "unity": "2019.1",
     "author": {
         "name": "Joshua Macauley",
         "email": "josh@macawls.dev",
