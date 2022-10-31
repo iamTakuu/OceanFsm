@@ -9,11 +9,9 @@
         "email": "josh@macawls.dev",
         "url": "https://macawls.dev/"
     },
-    "samples": [
-        {
-            "displayName": "State Machine Example Scene",
-            "description": "Contains a sample scene showcasing the functionality of Ocean FSM",
-            "path": "Samples/ExampleScene"
-        }
-    ]
+    "samples": [{
+        "displayName": "State Machine Example Scene",
+        "description": "Contains a sample scene showcasing the functionality of Ocean FSM",
+        "path": "Samples~/Example"
+    }]
 }
