@@ -1,8 +1,6 @@
 ﻿# Ocean Finite Machine
-<center>
 
 ![](https://i.imgur.com/foM5qZO.png)
-</center>
 
 A code-only, simple and easy to use Finite State Machine for your Unity Projects.
 
@@ -16,8 +14,6 @@ https://github.com/Macawls/OceanFsm.git
 ## Example Scene
 You can find the example scene under ~/Samples. 
 Copy it into your projects' assets folder to try it out! :)
-
-
 
 ## Getting Started
 There are two things you need, a state machine and states.
@@ -54,7 +50,6 @@ The following handlers are optional
 * IFixedUpdateHandler
 
 ```csharp
-
 public class FirstExampleState : OceanState<CubeMachine>, IEnterHandler, IUpdateHandler, IExitHandler
 {
     public FirstState(CubeMachine machine) : base(machine)
@@ -74,8 +69,22 @@ public class FirstExampleState : OceanState<CubeMachine>, IEnterHandler, IUpdate
     public void OnExit()
     {
         Debug.Log("Exited First State");
+    }   
+ }
+```
+
+### Transitioning Between States
+
+You can transition between states by calling Machine.TransitionToState from within the State.
+
+```csharp
+public void OnUpdate(float deltaTime)
+{
+    _timeElapsed += deltaTime;
+
+    if (_timeElapsed > 2f)
+    {
+        Machine.TransitionToState<SecondState>();
     }
-
-
 }
 ```
